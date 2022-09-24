@@ -1,0 +1,55 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <h1>Collage Web App
+           
+        </h1>
+        
+        <hr>
+        <h4 style="color:red;">Say "selfie" for taking a selfie to make a collage</h4>
+        
+        <div class="form-group">
+            <h3>Say "take my selfie"</h3>
+            <label>Your voice output : </label>
+            <textarea class="form-control" id="textbox" readonly="true"></textarea>
+        </div>
+
+        <p>Press the Start button</p>
+        <button id="start-btn" class="btn btn-primary" onclick="start()">Start</button>
+        <br>
+        <label>Your webcam : </label>
+            <div id="camera" ></div>
+        <br>
+
+        <label>Your selife Will Display Here: </label>
+            <div id="result"></div>
+    </center>
+    </div>
+    <br>
+    <center>
+    <div id="pic-1">
+        <img id="cam-1" src="cam 1.jfif">
+    </div>
+    <div id="pic-2">
+        <img id="cam-2" src="cam 2.jfif">
+    </div>
+    <div id="pic-3">
+        <img id="cam-3" src="cam 3.jfif">
+    </div>
+</center>
+
+    <script src="main.js"></script>
+</body>
+</html>
